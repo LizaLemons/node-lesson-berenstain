@@ -1,21 +1,20 @@
 {
-  "name": "contactr",
-  "version": "0.1.0",
-  "description": "simple contact api",
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon app.js"
+    "start": "node server.js"
   },
-  "author": "liza ramo",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "cors": "^2.7.1",
-    "express": "^4.13.4",
-    "mongodb": "^2.1.11"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.19.2"
   }
 }

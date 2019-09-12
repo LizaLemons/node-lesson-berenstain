@@ -1,0 +1,21 @@
+{
+  "name": "contactr",
+  "version": "0.1.0",
+  "description": "simple contact api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app.js"
+  },
+  "author": "liza ramo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Little CRUD Unicorn</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="icon" href="https://mmchansfantageblog.files.wordpress.com/2015/10/unicorn-emoji.jpg" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="index.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <!--
+    \.
+     \'.      ;.
+      \ '. ,--''-.~-~-'-,
+       \,-' ,-.   '.~-~-~~,
+     ,-'   ( # )    \-~'~=-.
+ _,-'       '-'      \=~-"~~',
+/o                    \~-""~=-,
+\__                    \=-,~"-~,
+   """===-----.         \~=-"~-.
+               \         \*=~-"
+                \         "=====----
+                 \
+                  \
+    -->
+
+
+    <h1>My Little CRUD Unicorn</h1>
+    <div>
+      <img class="unicorn-friend" src="http://blog.usabilla.com/wp-content/uploads/2015/11/Fotolia_94699156_Subscription_Monthly_M-1024x1024.jpg" alt="" />
+    </div>
+
+    <form>
+      <!-- radio buttons: -->
+      <label><b>Choose an option:</b>
+        <br>
+        <!-- see all -->
+        <input class="unicorns-radios" type="radio" id="see-all"
+        name="chosen-radio" value="see-all"> See all unicorns
+        <br>
+        <!-- add new -->
+        <input class="unicorns-radios" type="radio" id="add-new"
+               name="chosen-radio" value="add-new"> Add new unicorn
+        <br>
+
+        <!-- Find by name -->
+        <input class="unicorns-radios" type="radio" id="find-by-name"
+               name="chosen-radio" value="find-by-name"> Find a unicorn
+        <br>
+
+        <!-- delete by name -->
+        <input class="unicorns-radios" type="radio" id="delete-by-name"
+               name="chosen-radio" value="delete-by-name"> Delete a unicorn
+        <br>
+
+        <!-- update by name -->
+        <input class="unicorns-radios" type="radio" id="update-by-name"
+               name="chosen-radio" value="update-by-name"> Update a unicorn
+        <br>
+
+        <br>
+      </label>
+
+      <br>
+
+      <div name="go-button" id="go-button">Go!</div>
+    </form>
+    <br><br>
+    <hr>
+
+    <!-- **************************************************************** -->
+
+    <!-- See All: -->
+    <div id="all-div">
+      <p><b>All:</b></p>
+      <ul id="unicorns-list">
+        <!-- append unicorns here -->
+      </ul>
+      <br><hr>
+    </div>
+
+    <!-- Add: -->
+    <div id="add-div" class="">
+      <p><b>Add new:</b></p>
+      Name: <input type="text" id="add-new-name" class="" value=""><br>
+      Tail color: <input type="text" id="add-new-tail" class="" value="">
+      <button type="button" name="add-button" id="add-unicorn-button">Add</button>
+      <br><hr>
+    </div>
+
+    <!-- Find: -->
+    <div id="find-div" class="">
+      <p><b>Find:</b></p>
+      Name: <input type="text" id="find-name" class="" value="">
+      <button type="button" name="find-unicorn-button" id="find-unicorn-button">Find</button>
+      <br><hr>
+    </div>
+
+    <!-- Delete: -->
+    <div id="delete-div">
+      <p><b>Delete:</b></p>
+      Name: <input type="text" id="delete-name" class="" value="">
+      <button type="button" name="delete-unicorn-button" id="delete-unicorn-button">Delete</button>
+      <br><hr>
+    </div>
+
+    <!-- Update: -->
+    <div id="update-div">
+      <p><b>Update:</b></p>
+      Name: <input type="text" id="update-name" class="" value="">
+      <br><br><br>
+      New Name: <input type="text" id="new-update-name" class="" value="">
+      New Tail Color: <input type="text" id="new-update-tail" class="" value="">
+      <button type="button" name="update-unicorn-button" id="update-unicorn-button">Update</button>
+      <br><hr>
+    </div>
+
+  </body>
+</html>
